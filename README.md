@@ -9,7 +9,7 @@ $ ./ping_web_utility &
 
 Checking in browser:
 ```shell
-localhost:9003
+http://localhost:9003
 ```
 
 
