@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+
+<body style="background-color: #202124;color: #eee">
+
+{{if .Err}}
+<h1 style="color: red">Error !!! 😟</h1>
+{{end}}
+
+{{if .Data }}
+{{if not .Err}}
+<h1 style="color: green">Successful !!! 😀</h1>
+{{end}}
+{{end}}
+
+
+{{if not .Data }}
+<h1>Please enter url or ip addresses !!! 😐</h1>
+{{end}}
+
+<form>
+    <input type="text" name="s">
+    <input type="submit">
+</form>
+{{if .Data}}
+<pre>{{.Data}}</pre>
+{{end}}
+
+</body>
+</html>
