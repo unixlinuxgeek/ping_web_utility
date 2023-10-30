@@ -4,7 +4,7 @@
 
 Launching the web-application:
 ```bash
-$ ./ping_web_utility &
+$ ./bin/ping_web_utility &
 ```
 
 Checking in browser:
