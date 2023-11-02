@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"html/template"
 	"log"
@@ -23,9 +22,9 @@ func main() {
 
 func isInstalled() (error, bool) {
 	pth, err := exec.LookPath("ping")
-	if errors.Is(err, exec.ErrDot) {
-		err = nil
-	}
+	//if errors.Is(err, exec.ErrDot) {
+	//	err = nil
+	//}
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "%s\n", err)
 		return err, false
