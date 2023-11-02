@@ -35,7 +35,7 @@ func isInstalled() (error, bool) {
 
 func serve() {
 	http.HandleFunc("/", mainHandler)
-	log.Fatal(http.ListenAndServe(":9003", nil))
+	log.Fatal(http.ListenAndServe(":443", nil))
 }
 
 func mainHandler(rw http.ResponseWriter, rq *http.Request) {
